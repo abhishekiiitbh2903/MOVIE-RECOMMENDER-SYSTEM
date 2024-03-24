@@ -23,9 +23,9 @@ def recommend(movie):
 
     return recommended_movie_names,recommended_movie_posters
 
-st.set_page_config(page_title="Movie Recommender System", page_icon="logo.jpg", layout="centered")
-st.image("logo.jpg", caption="Optional image caption", use_column_width=True)
-st.header('Movie Recommender System')
+# st.set_page_config(page_title="Movie Recommender System", page_icon="logo.jpg", layout="centered")
+st.image("logo.jpg", caption="Author:Abhishek Singh", use_column_width=True)
+# st.header('Movie Recommender System')
 movies = pd.read_csv('movies_pycharm.csv')
 similarity = pickle.load(open('similarity.pkl','rb'))
 
